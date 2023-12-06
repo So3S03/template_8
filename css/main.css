@@ -1,0 +1,221 @@
+:root {
+    --main-color: #0078ff;
+    --second-color: #fff;
+    --animation-color: #7fb8fa;
+}
+
+html {
+    scroll-margin-top: 100px !important;
+
+}
+
+.my-bg {
+    background-color: #000000e2;
+}
+
+.intro-bg {
+    background-color: rgba(0, 0, 0, 0.549);
+}
+
+.nav,
+.dropdown-toggle.text-light {
+    font-weight: 600;
+    margin-right: 15px;
+    transition: all 0.6s;
+}
+
+.dropdown-toggle.text-light::before,
+.nav::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3.5px;
+    width: 0px;
+    height: 2px;
+    background-color: var(--second-color);
+    transition: all 0.6s;
+}
+
+.dropdown-toggle.text-light:hover::before,
+.dropdown-toggle.text-light.active::before,
+.nav:hover::before,
+.nav.active::before {
+    width: 100%;
+}
+
+.intro {
+    background-image: url(../media/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.size {
+    font-size: 72px;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.ab-sec-info h2 {
+    width: fit-content;
+}
+
+.ab-sec-info h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+.shape {
+    position: relative;
+}
+
+.shape::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--main-color);
+    width: 40px;
+    height: 5px;
+    transform: translateX(-50%);
+}
+
+.w-30 {
+    width: 31%;
+}
+
+.shape2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: var(--main-color) solid 7px;
+}
+
+.shape2 i {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.item span {
+    transition: all 0.6s;
+}
+
+.item:hover span {
+    background-color: var(--main-color);
+    border-color: var(--animation-color);
+    color: var(--second-color);
+}
+
+.nums {
+    background: linear-gradient(#0077ffb7, #0077ffb7), url(../media/counters-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pro .img {
+    overflow: hidden;
+}
+
+.pro img {
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.pro p {
+    font-size: 15px;
+}
+
+.pro:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.pro i:hover {
+    cursor: pointer;
+}
+
+.feedback,
+.back {
+    background: linear-gradient(#0077ffb7, #0077ffb7), url(../media/overlay-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.fix {
+    bottom: -15px !important;
+}
+
+.hover {
+    transition: all 0.6s;
+}
+
+.hover:hover {
+    color: var(--main-color) !important;
+}
+
+footer {
+    background: linear-gradient(#0077ffb7, #0077ffb7);
+}
+
+.shape3 {
+    position: relative;
+}
+
+.shape3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 18%;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+.contact textarea {
+    min-height: 150px;
+}
+
+.cont {
+    transition: all 0.6s;
+    border-color: var(--main-color) !important;
+}
+
+.cont:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border-color: var(--animation-color) !important;
+}
+
+.foot {
+    background: linear-gradient(#0077ffb7, #0077ffb7), #3b3939;
+}
